@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Smock Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #e0f2fe; /* light blue */
+        }
+        .admin-card {
+            background: linear-gradient(135deg, #fef08a 0%, #000000 100%); /* yellow to black gradient */
+            color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Admin Navigation -->
+    <nav class="bg-black text-yellow-400 py-4 px-6 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Admin Dashboard</h1>
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="hover:text-yellow-200">View Store</a>
+                <a href="#" class="hover:text-yellow-200">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Content -->
+    <div class="max-w-7xl mx-auto py-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Products Card -->
+            <div class="admin-card rounded-lg shadow-xl p-6">
+                <h2 class="text-xl font-bold mb-4">Products</h2>
+                <div class="space-y-4">
+                    <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-2 px-4 rounded">
+                        Add New Product
+                    </button>
+                    <button class="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded">
+                        Manage Products
+                    </button>
+                </div>
+            </div>
+
+            <!-- Orders Card -->
+            <div class="admin-card rounded-lg shadow-xl p-6">
+                <h2 class="text-xl font-bold mb-4">Orders</h2>
+                <div class="space-y-4">
+                    <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-2 px-4 rounded">
+                        View Recent Orders
+                    </button>
+                    <button class="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded">
+                        Order Analytics
+                    </button>
+                </div>
+            </div>
+
+            <!-- Users Card -->
+            <div class="admin-card rounded-lg shadow-xl p-6">
+                <h2 class="text-xl font-bold mb-4">Users</h2>
+                <div class="space-y-4">
+                    <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-2 px-4 rounded">
+                        Manage Users
+                    </button>
+                    <button class="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded">
+                        User Analytics
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Admin functionality will be added here
+    </script>
+</body>
+</html>
